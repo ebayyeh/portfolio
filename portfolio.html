@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <main>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Same sidebar content as index.html -->
+    </aside>
 
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="portfolio.html" class="navbar-link active">Portfolio</a>
+          </li>
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Portfolio Section -->
+      <article class="portfolio active" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Algorithms</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web Development</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Algorithms</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <!-- Project 1: Coffee Learning Website -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/projectcof.png" alt="Coffee Learning Website" loading="lazy">
+                </figure>
+                <h3 class="project-title">Coffee Learning Website</h3>
+                <p class="project-category">Web Development (HTML, CSS, JavaScript, Bootstrap)</p>
+              </a>
+            </li>
+
+            <!-- Project 2: OS Scheduling Algorithms -->
+            <li class="project-item active" data-filter-item data-category="algorithms">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/images/projcos.jpg" alt="Operating System Scheduling Algorithms" loading="lazy">
+                </figure>
+                <h3 class="project-title">Scheduling Algorithms</h3>
+                <p class="project-category">Algorithms (Implemented in C++)</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- Ionicon Script -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Custom Script -->
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>

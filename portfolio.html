@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
-  <!-- Correct CSS path -->
   <link rel="stylesheet" href="/portfolio/style.css">
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -23,7 +21,7 @@
 
         <div class="info-content">
           <h1 class="name" title="Ahmad Ebayyeh">Ahmad Ebayyeh</h1>
-          <p class="title">Computer Science Student</p>
+          <p class="title">CS Student & ML Engineer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -99,7 +97,7 @@
           </li>
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/ahmad-ebayyeh-2274722a7/" class="social-link">
+            <a href="https://www.linkedin.com/in/ahmad-ae" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
@@ -112,6 +110,7 @@
         </ul>
       </div>
     </aside>
+
     <!-- Main Content -->
     <div class="main-content">
       <!-- Navbar -->
@@ -141,6 +140,9 @@
               <button class="active" data-filter-btn>All</button>
             </li>
             <li class="filter-item">
+              <button data-filter-btn>ML & AI</button>
+            </li>
+            <li class="filter-item">
               <button data-filter-btn>Web Development</button>
             </li>
             <li class="filter-item">
@@ -161,6 +163,9 @@
                 <button data-select-item>All</button>
               </li>
               <li class="select-item">
+                <button data-select-item>ML & AI</button>
+              </li>
+              <li class="select-item">
                 <button data-select-item>Web Development</button>
               </li>
               <li class="select-item">
@@ -170,7 +175,50 @@
           </div>
 
           <ul class="project-list">
-            <!-- Project 1: Coffee Learning Website -->
+
+            <!-- Project: VISION -->
+            <li class="project-item active" data-filter-item data-category="ml & ai">
+              <a href="https://www.linkedin.com/posts/raed-khalil-rka_ieee-hackathon-ai-ugcPost-7394355962884628480-w6Uc" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="projectcof.png" alt="VISION AI Productivity Suite" loading="lazy">
+                </figure>
+                <h3 class="project-title">VISION — AI Productivity Suite</h3>
+                <p class="project-category">ML & AI (Computer Vision, NLP, Voice Agent · PyTorch)</p>
+              </a>
+            </li>
+
+            <!-- Project: VisionAID -->
+            <li class="project-item active" data-filter-item data-category="ml & ai">
+              <a href="https://github.com/ebayyeh" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="projcos.jpg" alt="VisionAID" loading="lazy">
+                </figure>
+                <h3 class="project-title">VisionAID — Assistive AI System</h3>
+                <p class="project-category">ML & AI (YOLOv8, MiDaS, TFLite · On-device Inference)</p>
+              </a>
+            </li>
+
+            <!-- Project: MLCraft -->
+            <li class="project-item active" data-filter-item data-category="ml & ai">
+              <a href="https://github.com/ebayyeh" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="projcos.jpg" alt="MLCraft Challenge V2" loading="lazy">
+                </figure>
+                <h3 class="project-title">MLCraft Challenge V2 — 3rd Place</h3>
+                <p class="project-category">ML & AI (Feature Engineering, Model Training)</p>
+              </a>
+            </li>
+
+            <!-- Project: Coffee Learning Website -->
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://ebayyeh.github.io/CoffeeAcademy/" target="_blank">
                 <figure class="project-img">
@@ -179,35 +227,33 @@
                   </div>
                   <img src="projectcof.png" alt="Coffee Learning Website" loading="lazy">
                 </figure>
-                <h3 class="project-title">Coffee Learning Website</h3>
+                <h3 class="project-title">Coffee Academy</h3>
                 <p class="project-category">Web Development (HTML, CSS, JavaScript, Bootstrap)</p>
               </a>
             </li>
 
-            <!-- Project 2: OS Scheduling Algorithms -->
+            <!-- Project: OS Scheduling Algorithms -->
             <li class="project-item active" data-filter-item data-category="algorithms">
-              <a href="https://github.com/ebayyeh/oscpp/blob/main/osalgos6.cpp">
+              <a href="https://github.com/ebayyeh/oscpp/blob/main/osalgos6.cpp" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
                   <img src="projcos.jpg" alt="Operating System Scheduling Algorithms" loading="lazy">
                 </figure>
-                <h3 class="project-title">Scheduling Algorithms</h3>
-                <p class="project-category">Algorithms (Implemented in C++)</p>
+                <h3 class="project-title">OS Scheduling Algorithms</h3>
+                <p class="project-category">Algorithms (FCFS, SJF, Round Robin · C++)</p>
               </a>
             </li>
+
           </ul>
         </section>
       </article>
     </div>
   </main>
 
-  <!-- Ionicon Script -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-  <!-- Custom Script -->
   <script src="/portfolio/script.js"></script>
 </body>
 </html>
